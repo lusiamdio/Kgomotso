@@ -35,9 +35,12 @@ export default function HomeTab({ onTabChange }: HomeTabProps) {
     <div className="space-y-16 md:space-y-24 animate-fade-in" id="home-tab-view">
       
       {/* 1. Hero Section (Transformation Focus) */}
-      <section className="relative overflow-hidden rounded-3xl bg-brand-deep text-white py-16 md:py-24 px-6 md:px-12 shadow-md">
+      <section 
+        className="relative overflow-hidden rounded-3xl bg-brand-deep text-white py-16 md:py-24 px-6 md:px-12 shadow-md bg-cover bg-center"
+        style={{ backgroundImage: `url(${picnicImage})` }}
+      >
         {/* Background Decorative Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-brand-deep via-brand-plum to-purple-900 opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-brand-deep/95 via-brand-plum/90 to-purple-950/85" />
         <div className="absolute -right-20 -top-20 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl" />
         <div className="absolute -left-20 -bottom-20 w-80 h-80 bg-brand-lilac/15 rounded-full blur-3xl" />
 
