@@ -30,14 +30,14 @@ const EVENTS_DATA: EventItem[] = [
     type: 'current',
     priceType: 'paid',
     price: "R350",
-    image: "/src/assets/images/journaling_workshop_1782251359503.jpg",
+    image: "https://images.prestigeonline.com/wp-content/uploads/sites/3/2021/11/30200752/women-of-power-defined-2.jpg",
     location: "Pretoria, South Africa",
     description: "A transformational masterclass that empowers women to show up with confidence, elegance, and spiritual alignment. We focus on active self-reflection, physical poise, vocal resonance, and custom goal-mapping. Includes premium high-tea refreshments.",
     pillar: "Thrive",
     theme: "Presence in the Room",
     galleryImages: [
-      "/src/assets/images/journaling_workshop_1782251359503.jpg",
-      "/src/assets/images/sisterhood_support_1782251346013.jpg"
+      "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/731328498_122111341767312295_493203840982682438_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s720x1280&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=K2gmWQ6espIQ7kNvwEKDcxu&_nc_oc=AdoOIvOi9VF63IqG2hPz1DERRY8ZeRCqgucD-Zegy038pcg6cYe_4-FVVtfuoitBg28&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=uCERAHNgcK3UAfQDcYamng&_nc_ss=7b2a8&oh=00_Af9AYnPdluuf6_Cq2DPKVoICYJbosuoNKU3tSYedkHfZKQ&oe=6A45DD02",
+      "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/731787729_122111341173312295_6208292111665524730_n.jpg?stp=dst-jpg_tt6&cstp=mx960x1280&ctp=s960x1280&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rcShH_XDNNQQ7kNvwGssboF&_nc_oc=AdooQEnCeN7dXOic49ra4WDUlmR-W5fBJl31-WfaY5LqzeUs6NR-15k9cFQdi5VgEg4&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=vDgpOYqMSOSiHAaSVLlBLQ&_nc_ss=7b2a8&oh=00_Af_MRdvJ5cOBIHxFoq-eIO6DkoXe77K8C76ehl8Pli9dsA&oe=6A45E15D"
     ]
   },
   {
@@ -47,14 +47,14 @@ const EVENTS_DATA: EventItem[] = [
     type: 'current',
     priceType: 'free',
     price: "Free",
-    image: "/src/assets/images/girls_talk_picnic_1782250460316.jpg",
+    image: "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/733271402_122111341287312295_4781985763319351875_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x943&ctp=s1280x943&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zd-U1-xisYwQ7kNvwG_OFPj&_nc_oc=AdrG6zf1cxcEzV_6JbJ05Vl0Xsu9WNhnW8Msy-LmQ_WLqmYakKix_Tpiy_E9V5xM4YA&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=abjHh29IiZ4xmoMu7M6M1w&_nc_ss=7b2a8&oh=00_Af8c2NGHd_ISf6qntHzieGJP6is9LCOZEPsKfYuDEzsBvA&oe=6A45DEA3",
     location: "Johannesburg Botanical Gardens",
     description: "Connect hand-in-hand in a relaxed outdoor setting. An authentic and warm afternoon filled with deep sisterhood, custom picnic refreshments, storytelling, and shared prayers under the South African sky.",
     pillar: "Heal",
     theme: "Walking Hand-in-Hand",
     galleryImages: [
-      "/src/assets/images/girls_talk_picnic_1782250460316.jpg",
-      "/src/assets/images/sisterhood_support_1782251346013.jpg"
+      "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/732269226_122111341227312295_5482612711083853525_n.jpg?stp=dst-jpg_tt6&cstp=mx905x546&ctp=s905x546&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sUQSYBkw0zEQ7kNvwHAZQ-9&_nc_oc=AdqJAeSoXFVdEvdap-Emzx0AWCUA9FhbHHwKryr9rEFOJDpReAfK1zcsflkM5SGk2f0&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=I54032isSdKeGruTzLtiVw&_nc_ss=7b2a8&oh=00_Af9iC_VHf2sjINvn-F5IOa5glJ5doGgAARbv7Ydgt_thSA&oe=6A45CC13",
+      "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/733747094_122111341413312295_7255052715452401704_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SDL9aAcJnosQ7kNvwFsh2OR&_nc_oc=Adprs8DPJz2EfRDwMdfCJdumRhUchW7FYht8piGf_B8Zra1fti8SC3Z4dA4Hpews6Cw&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=OGR0-UTB4K_xeg90pldW6A&_nc_ss=7b2a8&oh=00_Af9_eFUdg93Mh3_8v06vaD0-rerCW89bE37qUnJLMM69iA&oe=6A45F1D2"
     ]
   },
   {
@@ -64,13 +64,13 @@ const EVENTS_DATA: EventItem[] = [
     type: 'upcoming',
     priceType: 'paid',
     price: "R550",
-    image: "/src/assets/images/heart_conference_1782250491307.jpg",
+    image: "https://localist-images.azureedge.net/photos/50701938481318/huge/2dd878e7f5e833e19808abe26881ee7c568b2b4b.jpg",
     location: "Sandton Convention Centre, JHB",
     description: "Our signature annual flagship conference. A sacred and safe environment bringing together women from all walks of life for emotional restoration, powerful keynote sessions by Kgomotso Khalo, and live healing panel discussions.",
     pillar: "Heal & Grow",
     theme: "Restored to Lead",
     galleryImages: [
-      "/src/assets/images/heart_conference_1782250491307.jpg"
+      "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/732286067_122111340339312295_4576027979784422624_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gLb6DSt_bXUQ7kNvwFADKBI&_nc_oc=Adp9VLj_J5-vVOAJMH_Po842hZKRIO7NraWPFlewsJ3H-DY5iYCd_yt9d-YgZfRBfjc&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=o8-ByJ2Wsv8wuzbyFhHMeQ&_nc_ss=7b2a8&oh=00_Af8C8_wMk-ilpfqCo-ex2bd3WPjiBsaESXC_pMdaX1t6sg&oe=6A45F8AE"
     ]
   },
   {
@@ -80,13 +80,13 @@ const EVENTS_DATA: EventItem[] = [
     type: 'upcoming',
     priceType: 'free',
     price: "Free",
-    image: "/src/assets/images/girls_talk_hike_1782250476265.jpg",
+    image: "https://alt-africa.com/wp-content/uploads/2023/07/VIVOBarefootWinterCampaign-DAY1-892-WEB.jpg",
     location: "Hartebeespoort, North West",
     description: "A restorative health and wellness walk combining light fitness, beautiful mountain views, structured outdoor meditation pauses, and group spiritual alignment talks. Perfect for clearing the mind for the upcoming season.",
     pillar: "Thrive",
     theme: "Rise & Climb",
     galleryImages: [
-      "/src/assets/images/girls_talk_hike_1782250476265.jpg"
+      "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80&w=1200"
     ]
   },
   {
@@ -96,15 +96,15 @@ const EVENTS_DATA: EventItem[] = [
     type: 'past',
     priceType: 'paid',
     price: "R1200",
-    image: "/src/assets/images/sisterhood_support_1782251346013.jpg",
+    image: "https://travelcrafters.com.au/wp-content/uploads/2024/08/the-ultimate-guide-to-yoga-retreats-in-mexico.jpg",
     location: "Drakensberg Mountains",
     description: "A profound 3-day quiet escape designed for spiritual clearing, soul-care journaling, and intensive group therapy. Guided entirely by Kgomotso Khalo, focusing on releasing generational baggage and walking in absolute grace.",
     pillar: "Heal",
     theme: "Unveiling the Sacred Woman",
     galleryImages: [
-      "/src/assets/images/sisterhood_support_1782251346013.jpg",
-      "/src/assets/images/journaling_workshop_1782251359503.jpg",
-      "/src/assets/images/kgomotso_portrait_1782250444532.jpg"
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
     ]
   },
   {
@@ -114,15 +114,15 @@ const EVENTS_DATA: EventItem[] = [
     type: 'past',
     priceType: 'paid',
     price: "R250",
-    image: "/src/assets/images/kgomotso_portrait_1782250444532.jpg",
+    image: "https://cdn.memiah.co.uk/uploads/lifecoach-directory.org.uk/cms/wheel-of-life-800x512.1594715376.jpg",
     location: "Tuku Hospitality Base, Pretoria",
     description: "A highly practical workshop dedicated to evaluating personal goals, physical wellness, relationship safety, and career trajectories. Women designed physical vision boards and mapped their path of integrity.",
     pillar: "Grow",
     theme: "The Wheel of Alignment",
     galleryImages: [
-      "/src/assets/images/kgomotso_portrait_1782250444532.jpg",
-      "/src/assets/images/girls_talk_picnic_1782250460316.jpg",
-      "/src/assets/images/heart_conference_1782250491307.jpg"
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1200"
     ]
   }
 ];

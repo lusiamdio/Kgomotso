@@ -26,10 +26,14 @@ export default function HomeTab({ onTabChange }: HomeTabProps) {
     setActiveTestimonial((prev) => (prev + 1) % TESTIMONIALS.length);
   };
 
-  // Use the exact generated image paths!
-  const kgomotsoImage = "/src/assets/images/kgomotso_portrait_1782250444532.jpg";
-  const picnicImage = "/src/assets/images/girls_talk_picnic_1782250460316.jpg";
-  const conferenceImage = "/src/assets/images/heart_conference_1782250491307.jpg";
+  // Use professional real photos from the internet!
+  const userKgomotsoImage = "https://media.licdn.com/dms/image/v2/D4D22AQF0tafWIXAMGQ/feedshare-shrink_800/feedshare-shrink_800/0/1730105366292?e=2147483647&v=beta&t=7gl54U0M0JBrnMVQsO_p8Q9dM3Mr5M3pQpmiZs4QqSA";
+  const kgomotsoImage = (userKgomotsoImage && !userKgomotsoImage.startsWith('file://')) 
+    ? userKgomotsoImage 
+    : "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800";
+  const picnicImage = "https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&q=80&w=1200";
+  const conferenceImage = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1200";
+  const heroImage = "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/730320852_122111341119312295_911726429544685_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NUjeXBzOHbkQ7kNvwEzJV7e&_nc_oc=Adoz-mbzkZqFcisHn4P19cYTgiOUgYo3HNUcrp1PLPD-RD9p5GSOfl52DrX5Q83Q1jg&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=H0_TDNt7gVCTbG2bBPCutQ&_nc_ss=7b2a8&oh=00_Af9ayZLlbrS_QIBAqA028maGpxPeDF_wSAamJwSLfd4DcA&oe=6A45CEFD";
 
   return (
     <div className="space-y-16 md:space-y-24 animate-fade-in" id="home-tab-view">
@@ -37,7 +41,7 @@ export default function HomeTab({ onTabChange }: HomeTabProps) {
       {/* 1. Hero Section (Transformation Focus) */}
       <section 
         className="relative overflow-hidden rounded-3xl bg-brand-deep text-white py-16 md:py-24 px-6 md:px-12 shadow-md bg-cover bg-center"
-        style={{ backgroundImage: `url(${picnicImage})` }}
+        style={{ backgroundImage: `url(${heroImage})` }}
       >
         {/* Background Decorative Overlay */}
         <div className="absolute inset-0 bg-gradient-to-tr from-brand-deep/95 via-brand-plum/90 to-purple-950/85" />
@@ -205,6 +209,109 @@ export default function HomeTab({ onTabChange }: HomeTabProps) {
         </div>
       </section>
 
+      {/* 3.5. Sisterhood Gallery Section */}
+      <section className="space-y-8" id="sisterhood-gallery-section">
+        <div className="text-center max-w-xl mx-auto space-y-3">
+          <span className="text-xs font-semibold text-brand-plum uppercase tracking-wider block">Sisterhood in Action</span>
+          <h3 className="font-serif text-2xl md:text-3xl font-medium text-brand-deep">Moments of Connection</h3>
+          <p className="text-gray-500 text-xs md:text-sm font-light">
+            A glimpse into our picnics, brunches, and conferences—where healing, laughter, and transformation come alive.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Image 1: Picnic */}
+          <div className="group overflow-hidden rounded-2xl border border-purple-100/50 shadow-3xs bg-white relative aspect-[3/2] hover:shadow-md hover:border-purple-200 transition-all duration-300">
+            <img 
+              src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/731843551_122111341929312295_1577432662448604878_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x854&ctp=s1280x854&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=M1AqgRKkQqoQ7kNvwHDR_Nv&_nc_oc=AdrLAnMnU97tAQTIMCWOrCRnoAfPmUwFVLukIeZNoXBxieR1aqe3_l7xakKpfjfyQeI&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=hTa6_1Yug-fSyi71RVLFzg&_nc_ss=7b2a8&oh=00_Af9w-cmKGBK5JxXMniqoIAbn1E3s2EJiSj7DmBlf0suxFw&oe=6A46005B" 
+              alt="Outdoor Sisterhood Picnic" 
+              className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/85 via-brand-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 z-10" />
+            <div className="absolute bottom-4 left-4 right-4 text-white translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+              <span className="text-[10px] uppercase tracking-wider font-semibold text-amber-200">Picnic Series</span>
+              <p className="font-serif text-sm font-medium mt-0.5">Outdoor Sisterhood Picnic</p>
+            </div>
+          </div>
+
+          {/* Image 2: Hiking Table Setting */}
+          <div className="group overflow-hidden rounded-2xl border border-purple-100/50 shadow-3xs bg-white relative aspect-[3/2] hover:shadow-md hover:border-purple-200 transition-all duration-300">
+            <img 
+              src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/733271402_122111341287312295_4781985763319351875_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x943&ctp=s1280x943&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zd-U1-xisYwQ7kNvwG_OFPj&_nc_oc=AdrG6zf1cxcEzV_6JbJ05Vl0Xsu9WNhnW8Msy-LmQ_WLqmYakKix_Tpiy_E9V5xM4YA&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=abjHh29IiZ4xmoMu7M6M1w&_nc_ss=7b2a8&oh=00_Af8c2NGHd_ISf6qntHzieGJP6is9LCOZEPsKfYuDEzsBvA&oe=6A45DEA3" 
+              alt="Beautiful Table Setup in Nature" 
+              className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/85 via-brand-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 z-10" />
+            <div className="absolute bottom-4 left-4 right-4 text-white translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+              <span className="text-[10px] uppercase tracking-wider font-semibold text-amber-200">Table Settings</span>
+              <p className="font-serif text-sm font-medium mt-0.5">Serene Outdoor Picnic Table</p>
+            </div>
+          </div>
+
+          {/* Image 3: Community Brunch */}
+          <div className="group overflow-hidden rounded-2xl border border-purple-100/50 shadow-3xs bg-white relative aspect-[3/2] hover:shadow-md hover:border-purple-200 transition-all duration-300">
+            <img 
+              src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/730320852_122111341119312295_911726429544685_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NUjeXBzOHbkQ7kNvwEzJV7e&_nc_oc=Adoz-mbzkZqFcisHn4P19cYTgiOUgYo3HNUcrp1PLPD-RD9p5GSOfl52DrX5Q83Q1jg&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=H0_TDNt7gVCTbG2bBPCutQ&_nc_ss=7b2a8&oh=00_Af9ayZLlbrS_QIBAqA028maGpxPeDF_wSAamJwSLfd4DcA&oe=6A45CEFD" 
+              alt="Our Sisterhood Community Brunch" 
+              className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/85 via-brand-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 z-10" />
+            <div className="absolute bottom-4 left-4 right-4 text-white translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+              <span className="text-[10px] uppercase tracking-wider font-semibold text-amber-200">Brunch Series</span>
+              <p className="font-serif text-sm font-medium mt-0.5">Our Sisterhood Community Brunch</p>
+            </div>
+          </div>
+
+          {/* Image 4: Journaling Workshop */}
+          <div className="group overflow-hidden rounded-2xl border border-purple-100/50 shadow-3xs bg-white relative aspect-[3/2] hover:shadow-md hover:border-purple-200 transition-all duration-300">
+            <img 
+              src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/729451821_122111340837312295_7336809305250604228_n.jpg?stp=dst-jpg_tt6&cstp=mx720x1280&ctp=s720x1280&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=atnoi6ggZSQQ7kNvwFG9K9Z&_nc_oc=Adol3s3T6PF17QSsa-b_za7Ly6stv_aykuPLK2KWL9P3IJY36A2cC7qEM94wJqJcsOQ&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=70ScJUqEtP_6dR6z-k5aWw&_nc_ss=7b2a8&oh=00_Af-V-yszDD97GFmC9tL62Sf4vcoscWPevMysn9npQ8d9rQ&oe=6A45D05D" 
+              alt="Moments of Speech & Inspiration" 
+              className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/85 via-brand-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 z-10" />
+            <div className="absolute bottom-4 left-4 right-4 text-white translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+              <span className="text-[10px] uppercase tracking-wider font-semibold text-amber-200">Workshops</span>
+              <p className="font-serif text-sm font-medium mt-0.5">Award & Handover Ceremony</p>
+            </div>
+          </div>
+
+          {/* Image 5: Sisterhood Support */}
+          <div className="group overflow-hidden rounded-2xl border border-purple-100/50 shadow-3xs bg-white relative aspect-[3/2] hover:shadow-md hover:border-purple-200 transition-all duration-300">
+            <img 
+              src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/732286067_122111340339312295_4576027979784422624_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gLb6DSt_bXUQ7kNvwFADKBI&_nc_oc=Adp9VLj_J5-vVOAJMH_Po842hZKRIO7NraWPFlewsJ3H-DY5iYCd_yt9d-YgZfRBfjc&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=wSgtST7tpIdyv-ZjrEHZdw&_nc_ss=7b2a8&oh=00_Af-WzZJgsIC8n3t4mOgeHS8DJ9c-egURP_VvrS5VfKShJA&oe=6A45F8AE" 
+              alt="Circle of Joy & Support" 
+              className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/85 via-brand-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 z-10" />
+            <div className="absolute bottom-4 left-4 right-4 text-white translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+              <span className="text-[10px] uppercase tracking-wider font-semibold text-amber-200">Sisterhood</span>
+              <p className="font-serif text-sm font-medium mt-0.5">Walking Hand-in-Hand</p>
+            </div>
+          </div>
+
+          {/* Image 6: Kgomotso Khalo Portrait */}
+          <div className="group overflow-hidden rounded-2xl border border-purple-100/50 shadow-3xs bg-white relative aspect-[3/2] hover:shadow-md hover:border-purple-200 transition-all duration-300">
+            <img 
+              src={kgomotsoImage} 
+              alt="Kgomotso Khalo Portrait" 
+              className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/85 via-brand-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 z-10" />
+            <div className="absolute bottom-4 left-4 right-4 text-white translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-20">
+              <span className="text-[10px] uppercase tracking-wider font-semibold text-amber-200">The Founder</span>
+              <p className="font-serif text-sm font-medium mt-0.5">Kgomotso Khalo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 4. Interactive Call to Action Panel */}
       <section className="bg-gradient-to-br from-brand-bg to-purple-50 rounded-3xl p-8 md:p-12 border border-purple-100 shadow-2xs grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div className="space-y-5">
@@ -228,7 +335,7 @@ export default function HomeTab({ onTabChange }: HomeTabProps) {
         <div className="relative aspect-video rounded-2xl overflow-hidden border border-purple-100 shadow-xs bg-white flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-deep/30 z-10" />
           <img
-            src={picnicImage}
+            src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/731787732_122111340369312295_354768519045760712_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x853&ctp=s1280x853&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1iPOyrtw-cQQ7kNvwGOyZSJ&_nc_oc=AdrMkXs2moLUmqDcOhJRbm8cithDBKCTBMTT7yZMBU_nrOhVnrVaWyaGO0_Wtr9LEqU&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=wSgtST7tpIdyv-ZjrEHZdw&_nc_ss=7b2a8&oh=00_Af_mGgnfTz7Ckuz5hGw2zYQxneSJHIHwjptVZq6k9pmluw&oe=6A45EE44"
             alt="Girls Talk Picnic Gatherings"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

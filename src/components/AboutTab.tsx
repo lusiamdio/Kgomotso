@@ -4,7 +4,8 @@ import { PILLARS } from '../data';
 
 export default function AboutTab() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const kgomotsoImage = "/src/assets/images/kgomotso_portrait_1782250444532.jpg";
+  // Use professional real photo from the internet!
+  const kgomotsoImage = "https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/734008762_122111348433312295_2504867500340956890_n.jpg?stp=dst-jpg_tt6&cstp=mx1085x1450&ctp=s1085x1450&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=a1BJDzAvWpUQ7kNvwHyoSq6&_nc_oc=AdqOhemSMY5X1YO5TMBa4JI4K7T8lsxZ5_Xzr2P-BNf1JIpIPSMBqvK7qF0ilK2RrQE&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=joNDC-xpr_0zjUJEU4_pLw&_nc_ss=7b2a8&oh=00_Af8KmiKhcleittlcyOrKaZusz8yAMZRalHXhbg-Wl_BWuA&oe=6A45E75E";
 
   return (
     <div className="space-y-16 md:space-y-24 animate-fade-in" id="about-tab-view">
